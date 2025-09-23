@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
     const { name, email, company, country, phone, service, message } = body;
 
     // Create transporter using Gmail SMTP
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER,
@@ -52,13 +52,13 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ success: true, message: 'Email sent successfully' });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error sending email:', error);
     return NextResponse.json(
       { 
         success: false, 
         message: 'Failed to send email',
-        error: error.message || 'Unknown error'
+        error: error instanceof Error ? error.message : 'Unknown error'
       },
       { status: 500 }
     );

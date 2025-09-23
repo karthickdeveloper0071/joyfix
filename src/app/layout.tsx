@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   title: "Joy Fix - Custom CRM, ERP & E-commerce Development | Import Export Software Solutions",
   description: "Joy Fix develops fully customized CRM systems, ERP solutions, e-commerce websites, invoice management & shipment tracking software using React, Java Spring, Node.js, AWS & .NET for import-export businesses in Malaysia, Singapore, UK & USA.",
   icons: {
-    icon: '/logo.svg',
-    shortcut: '/logo.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
     apple: '/logo.svg',
   },
   keywords: "custom CRM development, ERP software, e-commerce website development, invoice management system, shipment tracking software, import export software, React development, Java Spring, Node.js, AWS, .NET development, Malaysia software development, Singapore software company",

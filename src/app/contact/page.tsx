@@ -1,13 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { 
   Mail, 
   Phone, 
   MapPin, 
   Clock,
-  Send,
   CheckCircle,
   MessageSquare,
   Users,
@@ -18,69 +16,6 @@ import SimpleContactForm from '../../components/ui/SimpleContactForm';
 import LeadManagementInfo from '../../components/ui/LeadManagementInfo';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Create email content for mailto fallback
-    const emailContent = `
-Contact Form Submission:
-
-Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company || 'Not provided'}
-Country: ${formData.country}
-Phone: ${formData.phone || 'Not provided'}
-Service: ${formData.service || 'Not specified'}
-
-Message:
-${formData.message}
-
----
-Sent from Joy Fix Contact Form`;
-    
-    const subject = `Joy Fix Contact - ${formData.name}`;
-    const mailtoLink = `mailto:karthick123svks@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
-    
-    // Open email client
-    window.open(mailtoLink, '_blank');
-    
-    // Show success message
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        country: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-    }, 3000);
-    
-    setIsSubmitting(false);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   const contactInfo = [
     {
@@ -113,24 +48,7 @@ Sent from Joy Fix Contact Form`;
     }
   ];
 
-  const services = [
-    'E-commerce Development',
-    'Student Management System',
-    'Custom CRM Development',
-    'Import/Export Documentation System',
-    'Shopping Business Solutions',
-    'Business Process Automation',
-    'System Integration & Migration',
-    'Software Consulting & Support'
-  ];
 
-  const countries = [
-    'Malaysia',
-    'Singapore', 
-    'United Kingdom',
-    'United States',
-    'Other'
-  ];
 
   const stats = [
     { icon: Users, label: 'Happy Clients', value: '500+' },

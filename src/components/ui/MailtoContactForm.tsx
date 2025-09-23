@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Send, CheckCircle, Mail } from 'lucide-react';
+import { Send, Mail } from 'lucide-react';
 
 export default function MailtoContactForm() {
   const [formData, setFormData] = useState({
@@ -80,7 +80,7 @@ Please reply to: ${formData.email}
           karthick123svks@gmail.com
         </p>
         <p className="text-sm text-gray-500">
-          Please click 'Send' in your email client to complete the message delivery.
+          Please click &apos;Send&apos; in your email client to complete the message delivery.
         </p>
       </motion.div>
     );
@@ -200,8 +200,8 @@ Please reply to: ${formData.email}
             <div>
               <h4 className="text-sm font-medium text-blue-900">How this works:</h4>
               <p className="text-sm text-blue-700 mt-1">
-                When you click "Send Email", your default email client will open with a pre-filled message to <strong>karthick123svks@gmail.com</strong>. 
-                Simply click "Send" in your email client to deliver the message.
+                When you click &quot;Send Email&quot;, your default email client will open with a pre-filled message to <strong>karthick123svks@gmail.com</strong>. 
+                Simply click &quot;Send&quot; in your email client to deliver the message.
               </p>
             </div>
           </div>
