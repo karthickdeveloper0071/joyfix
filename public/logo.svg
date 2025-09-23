@@ -1,0 +1,37 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="joyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="fixGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Circle Background -->
+  <circle cx="50" cy="50" r="45" fill="url(#joyGradient)" />
+  
+  <!-- Inner Design - Represents "Joy" -->
+  <path d="M25 35 Q35 25 45 35 Q50 40 45 45 Q35 55 25 45 Q20 40 25 35 Z" fill="white" fill-opacity="0.9" />
+  
+  <!-- Gear/Fix Symbol -->
+  <circle cx="70" cy="65" r="12" fill="url(#fixGradient)" />
+  <circle cx="70" cy="65" r="6" fill="white" />
+  <!-- Gear teeth -->
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" />
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" transform="rotate(45 70 65)" />
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" transform="rotate(90 70 65)" />
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" transform="rotate(135 70 65)" />
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" transform="rotate(180 70 65)" />
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" transform="rotate(225 70 65)" />
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" transform="rotate(270 70 65)" />
+  <rect x="69" y="50" width="2" height="6" fill="url(#fixGradient)" transform="rotate(315 70 65)" />
+  
+  <!-- Sparkle Effects -->
+  <circle cx="30" cy="25" r="2" fill="white" />
+  <circle cx="75" cy="30" r="1.5" fill="white" />
+  <circle cx="80" cy="80" r="1" fill="white" />
+</svg>
