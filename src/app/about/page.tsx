@@ -17,10 +17,10 @@ import LogoShowcase from '../../components/ui/LogoShowcase';
 
 export default function About() {
   const stats = [
-    { label: 'Years of Experience', value: '8+', icon: Award },
-    { label: 'Import-Export Clients', value: '200+', icon: Users },
-    { label: 'Countries Served', value: '4', icon: Globe },
-    { label: 'Systems Deployed', value: '300+', icon: Target },
+    { label: 'Years Learning', value: '3+', icon: Award },
+    { label: 'Projects Ready', value: '∞', icon: Users },
+    { label: 'Technologies', value: '5+', icon: Globe },
+    { label: 'Passion Level', value: '100%', icon: Target },
   ];
 
   const values = [
@@ -42,43 +42,35 @@ export default function About() {
   ];
 
   const technologies = [
-    'E-commerce Development',
-    'Student Management System',
+    'React & Next.js',
+    'Java Spring Boot',
+    'Node.js & Express',
+    'AWS Cloud Services',
+    '.NET Framework',
     'Custom CRM Development',
-    'Business Process Automation',
-    'Import/Export Documentation',
+    'ERP Solutions',
+    'E-commerce Platforms',
     'Multi-currency Systems',
-    'Inventory Management',
-    'Customer Relationship Management',
-    'API Integration & Webhooks',
-    'Data Migration Services',
-    'Mobile Applications'
+    'API Integration',
+    'Database Design',
+    'Mobile Applications',
+    'Business Automation',
+    'Payment Gateways',
+    'Shipment Tracking'
   ];
 
   const team = [
     {
-      name: 'Alex Johnson',
-      role: 'CEO & Founder',
-      experience: '15+ years',
-      specialties: ['Strategic Planning', 'Business Development', 'Client Relations']
+      name: 'Karthick',
+      role: 'Founder & Lead Developer',
+      experience: '2+ years',
+      specialties: ['Full-Stack Development', 'UI/UX Design',  'Business Strategy']
     },
     {
-      name: 'Sarah Chen',
-      role: 'CTO',
-      experience: '12+ years',
-      specialties: ['System Architecture', 'Cloud Solutions', 'Team Leadership']
-    },
-    {
-      name: 'Michael Rodriguez',
-      role: 'Head of Development',
-      experience: '10+ years',
-      specialties: ['Full-Stack Development', 'CRM Solutions', 'AI Integration']
-    },
-    {
-      name: 'Emily Watson',
-      role: 'Lead Designer',
-      experience: '8+ years',
-      specialties: ['UI/UX Design', 'User Research', 'Design Systems']
+      name: 'Join Our Team',
+      role: 'We\'re Growing',
+      experience: 'Multiple Positions',
+      specialties: ['Java Developer', 'Full-Stack Developer', 'DevOps Engineer']
     }
   ];
 
@@ -101,10 +93,10 @@ export default function About() {
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Joy Fix</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-              We are a specialized software solutions provider focusing on e-commerce, student management systems, 
-              and import-export businesses. Since 2016, Joy Fix has been helping businesses in Malaysia, Singapore, 
-              UK & USA streamline their operations with custom software development and business automation systems.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed">
+              Founded by Karthick, Joy Fix is a modern software development company that combines 
+              beautiful design with powerful technology. We create stunning web applications, 
+              mobile apps, and custom software solutions that help businesses grow and succeed.
             </p>
           </motion.div>
 
@@ -142,11 +134,11 @@ export default function About() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                To empower businesses with specialized software solutions including e-commerce platforms, 
-                student management systems, and business automation that streamline operations, enhance 
-                customer management, and drive sustainable growth. We believe that technology should be 
-                accessible, reliable, and transformative.
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                To create beautiful, powerful software solutions that help businesses thrive in the digital age. 
+                We believe every company deserves custom-built technology that reflects their unique vision and 
+                drives real results. Our mission is to make cutting-edge software development accessible to 
+                businesses of all sizes through innovative design and modern technology.
               </p>
               
               <div className="space-y-4">
@@ -183,19 +175,20 @@ export default function About() {
             >
               <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                <p className="text-blue-100 mb-6">
-                  To be the global leader in business transformation solutions, recognized for our 
-                  innovation, reliability, and commitment to client success across all markets we serve.
+                <p className="text-blue-100 mb-6 leading-relaxed">
+                  To become the go-to software development partner for businesses seeking beautiful, 
+                  functional, and innovative digital solutions. We envision a future where every company 
+                  has access to custom software that perfectly fits their needs and accelerates their success.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-white/10 rounded-lg">
-                    <div className="text-2xl font-bold">2030</div>
-                    <div className="text-sm text-blue-100">Global Expansion Goal</div>
+                    <div className="text-2xl font-bold">100+</div>
+                    <div className="text-sm text-blue-100">Projects Goal 2025</div>
                   </div>
                   <div className="text-center p-4 bg-white/10 rounded-lg">
-                    <div className="text-2xl font-bold">10K+</div>
-                    <div className="text-sm text-blue-100">Target Clients</div>
+                    <div className="text-2xl font-bold">∞</div>
+                    <div className="text-sm text-blue-100">Creative Solutions</div>
                   </div>
                 </div>
               </div>
@@ -259,9 +252,9 @@ export default function About() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Technology Expertise</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We stay at the forefront of technology, continuously updating our skills and 
-              adopting new tools to deliver the best solutions for our clients.
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              We leverage cutting-edge technologies and modern frameworks to build scalable, 
+              secure, and high-performance solutions that meet the unique demands of international trade businesses.
             </p>
           </motion.div>
 
@@ -270,7 +263,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
           >
             {technologies.map((tech, index) => (
               <motion.div
@@ -337,7 +330,7 @@ export default function About() {
       </section>
 
       {/* Logo Showcase */}
-      <LogoShowcase />
+    
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">

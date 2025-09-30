@@ -18,35 +18,35 @@ import {
 export default function Services() {
   const services = [
     {
-      id: 'crm',
+      id: 'web-apps',
       icon: Database,
-      title: 'Custom CRM Development',
-      description: 'Fully customized Customer Relationship Management systems built from scratch for your specific business needs.',
+      title: 'Modern Web Applications',
+      description: 'Beautiful, responsive web applications built with cutting-edge technologies. From business dashboards to customer portals, we create stunning interfaces that users love.',
       features: [
-        'Custom Database Design & Architecture',
-        'Customer & Supplier Management',
-        'Sales Pipeline & Lead Management',
-        'Multi-currency & Multi-language Support',
-        'Advanced Reporting & Analytics',
-        'API Integration & Third-party Connections'
+        'Responsive Design & Mobile-First Approach',
+        'Interactive User Interfaces',
+        'Real-time Data & Live Updates',
+        'Progressive Web App (PWA) Features',
+        'Advanced Analytics & Reporting',
+        'API Integration & Third-party Services'
       ],
-      technologies: ['React', 'Java Spring Boot', 'MySQL/PostgreSQL', 'AWS'],
+      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
       color: 'from-blue-500 to-blue-600'
     },
     {
-      id: 'erp',
+      id: 'mobile-apps',
       icon: ArrowUpDown,
-      title: 'Complete ERP Solutions',
-      description: 'Full-scale Enterprise Resource Planning systems for comprehensive business management and operations.',
+      title: 'Mobile Applications',
+      description: 'Native and cross-platform mobile apps that deliver exceptional user experiences on iOS and Android devices.',
       features: [
-        'Financial Management & Accounting',
-        'Inventory & Warehouse Management',
-        'Procurement & Supplier Management',
-        'Production Planning & Control',
-        'Human Resource Management',
-        'Business Intelligence & Reporting'
+        'Cross-Platform Development',
+        'Native Performance & Feel',
+        'Offline Functionality',
+        'Push Notifications & Messaging',
+        'App Store Optimization',
+        'Analytics & User Tracking'
       ],
-      technologies: ['Java Spring Boot', '.NET Core', 'React', 'SQL Server', 'AWS'],
+      technologies: ['React Native', 'Flutter', 'Firebase', 'AWS Amplify'],
       color: 'from-green-500 to-green-600'
     },
     {
@@ -135,12 +135,26 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Custom Software <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Development Services</span>
+              Beautiful Software <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Solutions</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              We develop fully customized CRM systems, ERP solutions, e-commerce websites, invoice management, 
-              and shipment tracking software using React, Java Spring, Node.js, AWS & .NET technologies.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
+              Joy Fix creates stunning, modern software applications that combine beautiful design with powerful functionality. 
+              Founded by Karthick, we specialize in web applications, mobile apps, e-commerce platforms, 
+              and custom business solutions using React, Java, Node.js, and cloud technologies.
             </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
+              {['Modern Design Focus', 'Full-Stack Expertise', 'Cloud-First Approach', 'Founder-Led Team'].map((stat, index) => (
+                <motion.div
+                  key={stat}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 0.1 * index }}
+                  className="bg-white px-6 py-3 rounded-full shadow-lg border border-gray-200"
+                >
+                  <span className="text-gray-700 font-semibold">{stat}</span>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -194,13 +208,21 @@ export default function Services() {
                       </div>
                     </div>
                     
-                    <Link
-                      href="/contact"
-                      className={`bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 inline-flex items-center group`}
-                    >
-                      Get Started
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    <div className="flex gap-3">
+                      <Link
+                        href={`/services/${service.id}`}
+                        className={`bg-gradient-to-r ${service.color} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 inline-flex items-center group`}
+                      >
+                        Learn More
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                      <Link
+                        href="/contact"
+                        className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200"
+                      >
+                        Get Quote
+                      </Link>
+                    </div>
                   </div>
                   
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} relative`}>

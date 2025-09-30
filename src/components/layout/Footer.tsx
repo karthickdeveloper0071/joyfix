@@ -31,8 +31,8 @@ export default function Footer() {
               <span className="text-xl font-bold">Joy Fix</span>
             </div>
             <p className="text-gray-300 mb-4">
-              Custom software development company specializing in CRM systems, ERP solutions, e-commerce websites, 
-              invoice management & shipment tracking software for import-export businesses across Malaysia, Singapore, UK & USA.
+              Modern software development company founded by Karthick, specializing in beautiful web applications, 
+              mobile apps, and custom business solutions. We combine stunning design with powerful technology.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -87,26 +87,24 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">info@joyfix.com</span>
+                <span className="text-gray-300">karthick123svks@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91 8825537674</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">Global Operations</span>
+                <span className="text-gray-300">200 Feet Radial Rd, Iswarya Nagar, Raja Joseph Colony, Pallavaram, Chennai, Tamil Nadu 600043, India</span>
               </div>
             </div>
 
             {/* Countries */}
             <div className="mt-4">
-              <p className="text-sm text-gray-400 mb-2">Operating in:</p>
+              <p className="text-sm text-gray-400 mb-2">Ready to serve:</p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-gray-800 text-xs rounded">Malaysia</span>
-                <span className="px-2 py-1 bg-gray-800 text-xs rounded">Singapore</span>
-                <span className="px-2 py-1 bg-gray-800 text-xs rounded">UK</span>
-                <span className="px-2 py-1 bg-gray-800 text-xs rounded">USA</span>
+                <span className="px-2 py-1 bg-gray-800 text-xs rounded">India</span>
+                <span className="px-2 py-1 bg-gray-800 text-xs rounded">Global Remote</span>
               </div>
             </div>
           </div>

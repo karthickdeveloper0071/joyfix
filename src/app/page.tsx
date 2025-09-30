@@ -3,23 +3,24 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Globe, Users, Award, Zap } from 'lucide-react';
+import { lazy, Suspense } from 'react';
 import Logo from '../components/ui/Logo';
 
 export default function Home() {
   const stats = [
-    { label: 'Countries Served', value: '4+', icon: Globe },
-    { label: 'Custom Systems Built', value: '150+', icon: Award },
-    { label: 'Happy Clients', value: '100+', icon: Users },
-    { label: 'Years Experience', value: '8+', icon: Zap },
+    { label: 'Technologies Ready', value: '5+', icon: Globe },
+    { label: 'Ideas to Reality', value: '∞', icon: Award },
+    { label: 'Startup Energy', value: '100%', icon: Users },
+    { label: 'Years Learning', value: '3+', icon: Zap },
   ];
 
   const features = [
-    'Fully Customized CRM Development',
-    'Complete ERP Solutions',
-    'E-commerce Website Development',
-    'Invoice Management Systems',
-    'Shipment Tracking Software',
-    'Shop Management Solutions'
+    'Custom CRM Development',
+    'E-commerce Platforms',
+    'Student Management Systems',
+    'Business Automation Tools',
+    'Modern Web Applications',
+    'Mobile-Friendly Solutions'
   ];
 
   const technologies = [
@@ -47,13 +48,13 @@ export default function Home() {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-                Custom CRM, ERP & E-commerce Development for
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Import Export Business</span>
+                Custom Software Development for
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Modern Businesses</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Joy Fix develops fully customized CRM systems, ERP solutions, e-commerce websites, invoice management 
-                and shipment tracking software using React, Java Spring, Node.js, AWS & .NET technologies for 
-                import-export businesses in Malaysia, Singapore, UK & USA.
+                Joy Fix is a passionate startup ready to build custom CRM systems, e-commerce platforms, 
+                and student management systems using React, Node.js, and modern technologies. 
+                Let's bring your business ideas to life!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -96,7 +97,7 @@ export default function Home() {
               className="relative"
             >
               <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white shadow-2xl">
-                <h3 className="text-2xl font-bold mb-6">Trusted by 100+ Import-Export Businesses</h3>
+                <h3 className="text-2xl font-bold mb-6">Ready to Build Amazing Solutions</h3>
                 <div className="grid grid-cols-2 gap-6">
                   {stats.map((stat, index) => {
                     const Icon = stat.icon;
@@ -159,8 +160,236 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Services Overview */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Complete Software Solutions for Import-Export Business
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From CRM systems to e-commerce platforms, we build everything your import-export business needs to scale globally.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Custom CRM Systems',
+                description: 'Manage customers, leads, orders, and relationships with fully customized CRM solutions built for import-export workflows.',
+                features: ['Lead Management', 'Order Tracking', 'Customer Portal', 'Sales Analytics']
+              },
+              {
+                title: 'ERP Solutions',
+                description: 'Complete business management with inventory, accounting, procurement, and supply chain integration.',
+                features: ['Inventory Control', 'Financial Management', 'Supplier Portal', 'Reporting Dashboard']
+              },
+              {
+                title: 'E-commerce Platforms',
+                description: 'Multi-currency, multi-language online stores with international shipping and payment gateway integration.',
+                features: ['Global Payments', 'Multi-Currency', 'Shipping Integration', 'Mobile Responsive']
+              },
+              {
+                title: 'Invoice Management',
+                description: 'Automated invoicing, payment tracking, and financial reporting with multi-currency support.',
+                features: ['Auto Invoicing', 'Payment Tracking', 'Tax Compliance', 'Financial Reports']
+              },
+              {
+                title: 'Shipment Tracking',
+                description: 'Real-time tracking, logistics management, and automated notifications for international shipments.',
+                features: ['Real-time Tracking', 'Logistics Management', 'Automated Alerts', 'Delivery Confirmation']
+              },
+              {
+                title: 'Shop Management',
+                description: 'Complete retail management with POS integration, inventory sync, and multi-location support.',
+                features: ['POS Integration', 'Multi-location', 'Staff Management', 'Sales Analytics']
+              }
+            ].map((service, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+                viewport={{ once: true }}
+                className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6">{service.description}</p>
+                <ul className="space-y-2">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center text-sm text-gray-700">
+                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                Why Choose Joy Fix
+              </h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Founded by Karthick, Joy Fix combines technical expertise with innovative design 
+                to create stunning, functional software solutions that drive business growth.
+              </p>
+              
+              <div className="space-y-6">
+                {[
+                  {
+                    title: 'Founder-Led Innovation',
+                    description: 'Karthick personally oversees every project, ensuring attention to detail and innovative solutions tailored to your vision.'
+                  },
+                  {
+                    title: 'Modern Design Focus',
+                    description: 'Beautiful, user-friendly interfaces combined with powerful functionality to create exceptional user experiences.'
+                  },
+                  {
+                    title: 'Full-Stack Expertise',
+                    description: 'Complete end-to-end development from stunning frontend designs to robust backend systems and cloud deployment.'
+                  },
+                  {
+                    title: 'Startup Agility',
+                    description: 'Fast turnaround times, flexible approach, and direct communication with the founder for rapid iteration and feedback.'
+                  }
+                ].map((item, index) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.1 * index }}
+                    viewport={{ once: true }}
+                    className="flex items-start space-x-4"
+                  >
+                    <div className="bg-blue-100 rounded-full p-2 flex-shrink-0">
+                      <CheckCircle className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+                      <p className="text-gray-600">{item.description}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8"
+            >
+              <div className="grid grid-cols-2 gap-8">
+                {[
+                  { label: 'Technologies Ready', value: '5+', desc: 'React, Java, Node.js, AWS, .NET' },
+                  { label: 'Ideas to Reality', value: '∞', desc: 'Custom solutions for your needs' },
+                  { label: 'Startup Energy', value: '100%', desc: 'Passionate about innovation' },
+                  { label: 'Years Learning', value: '3+', desc: 'Continuous skill development' }
+                ].map((stat, index) => (
+                  <motion.div
+                    key={stat.label}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.1 * index }}
+                    viewport={{ once: true }}
+                    className="text-center"
+                  >
+                    <div className="text-3xl font-bold text-blue-600 mb-2">{stat.value}</div>
+                    <div className="text-gray-900 font-semibold mb-1">{stat.label}</div>
+                    <div className="text-sm text-gray-600">{stat.desc}</div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Our Development Process
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From consultation to deployment, we follow a proven process to deliver custom software solutions on time and within budget.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: '01',
+                title: 'Discovery & Analysis',
+                description: 'We analyze your business processes, requirements, and goals to design the perfect solution.'
+              },
+              {
+                step: '02',
+                title: 'Custom Development',
+                description: 'Our team builds your system using modern technologies, following best practices and security standards.'
+              },
+              {
+                step: '03',
+                title: 'Testing & Quality Assurance',
+                description: 'Comprehensive testing ensures your system works flawlessly across all devices and scenarios.'
+              },
+              {
+                step: '04',
+                title: 'Deployment & Support',
+                description: 'We deploy your system and provide ongoing support to ensure smooth operations and growth.'
+              }
+            ].map((process, index) => (
+              <motion.div
+                key={process.step}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+                viewport={{ once: true }}
+                className="bg-white rounded-xl p-6 shadow-lg text-center relative"
+              >
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-2xl font-bold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  {process.step}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{process.title}</h3>
+                <p className="text-gray-600">{process.description}</p>
+                {index < 3 && (
+                  <div className="hidden lg:block absolute top-8 -right-4 w-8 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -168,20 +397,27 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Transform Your Business?
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Build Something Amazing?
             </h2>
-            <p className="text-blue-100 text-xl mb-8">
-              Join 100+ import-export businesses who have transformed their operations with our custom software solutions.
-              Let&apos;s discuss how we can build the perfect system for your business needs.
+            <p className="text-blue-100 text-xl mb-8 max-w-2xl mx-auto">
+              Join Karthick and the Joy Fix team in creating beautiful, powerful software solutions. 
+              Let's turn your ideas into reality with modern technology and stunning design.
             </p>
-            <Link
-              href="/contact"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-200 inline-flex items-center group"
-            >
-              Start Your Project Today
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact"
+                className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center justify-center"
+              >
+                Start Your Project
+              </Link>
+              <Link
+                href="/about"
+                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300 inline-flex items-center justify-center"
+              >
+                Meet Karthick
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>

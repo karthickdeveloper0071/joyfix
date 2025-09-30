@@ -80,9 +80,9 @@ export default function RootLayout({
               "logo": "https://joyfix.com/logo.svg",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-555-123-4567",
+                "telephone": "+91 8825537674",
                 "contactType": "customer service",
-                "availableLanguage": ["English", "Malay"]
+                "availableLanguage": ["English", "Tamil"]
               },
               "address": {
                 "@type": "PostalAddress",
@@ -94,7 +94,7 @@ export default function RootLayout({
               ],
               "serviceArea": {
                 "@type": "Place",
-                "name": ["Malaysia", "Singapore", "United Kingdom", "United States"]
+                "name": ["India","Malaysia", "Singapore", "United Kingdom", "United States"]
               },
               "knowsAbout": [
                 "Custom CRM Development",

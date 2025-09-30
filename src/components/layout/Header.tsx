@@ -11,11 +11,12 @@ export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    { name: 'Custom CRM Development', href: '/services#crm' },
-    { name: 'Complete ERP Solutions', href: '/services#erp' },
-    { name: 'E-commerce Website Development', href: '/services#ecommerce' },
-    { name: 'Invoice Management Systems', href: '/services#invoice' },
-    { name: 'Shipment Tracking Software', href: '/services#shipment' },
+    { name: 'Custom CRM Development', href: '/services/crm' },
+    { name: 'Complete ERP Solutions', href: '/services/erp' },
+    { name: 'E-commerce Website Development', href: '/services/ecommerce' },
+    { name: 'Invoice Management Systems', href: '/services/invoice' },
+    { name: 'Shipment Tracking Software', href: '/services/shipment' },
+    { name: 'All Services', href: '/services' },
   ];
 
   return (
@@ -75,6 +76,12 @@ export default function Header() {
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             >
               About
+            </Link>
+            <Link 
+              href="/careers" 
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+            >
+              Careers
             </Link>
             <Link 
               href="/contact" 
@@ -142,6 +149,13 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About
+                </Link>
+                <Link
+                  href="/careers"
+                  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Careers
                 </Link>
                 <Link
                   href="/contact"
