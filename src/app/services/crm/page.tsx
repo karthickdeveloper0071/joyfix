@@ -9,7 +9,7 @@ import {
   Globe, 
   Brain, 
   Zap,
-  CheckCircle,
+ 
   ArrowRight,
   Bot,
   TrendingUp,

@@ -183,7 +183,7 @@ export default function Cookies() {
             </p>
             
             <div className="space-y-6">
-              {thirdPartyServices.map((service, index) => (
+              {thirdPartyServices.map((service) => (
                 <div key={service.name} className="border border-gray-200 rounded-lg p-4">
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div>

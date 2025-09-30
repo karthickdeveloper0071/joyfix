@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Globe, Users, Award, Zap } from 'lucide-react';
-import { lazy, Suspense } from 'react';
+
 import Logo from '../components/ui/Logo';
 
 export default function Home() {
@@ -54,7 +54,7 @@ export default function Home() {
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Joy Fix is a passionate startup ready to build custom CRM systems, e-commerce platforms, 
                 and student management systems using React, Node.js, and modern technologies. 
-                Let's bring your business ideas to life!
+                Let&apos;s bring your business ideas to life!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -402,7 +402,7 @@ export default function Home() {
             </h2>
             <p className="text-blue-100 text-xl mb-8 max-w-2xl mx-auto">
               Join Karthick and the Joy Fix team in creating beautiful, powerful software solutions. 
-              Let's turn your ideas into reality with modern technology and stunning design.
+              Let&apos;s turn your ideas into reality with modern technology and stunning design.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

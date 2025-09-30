@@ -15,7 +15,7 @@ import {
   TrendingUp,
   Shield,
   Smartphone,
-  Navigation
+
 } from 'lucide-react';
 
 export default function ShipmentPage() {

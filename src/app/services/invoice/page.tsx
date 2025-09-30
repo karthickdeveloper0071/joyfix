@@ -11,11 +11,11 @@ import {
   Zap,
   BarChart3,
   ArrowRight,
-  Bot,
+
   TrendingUp,
   Shield,
   Clock,
-  Receipt
+
 } from 'lucide-react';
 
 export default function InvoicePage() {

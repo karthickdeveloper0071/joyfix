@@ -77,7 +77,7 @@ export default function Contact() {
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Ready to create something beautiful? Karthick and the Joy Fix team are excited 
-              to work with you on your next project. Let's build stunning software solutions 
+              to work with you on your next project. Let&apos;s build stunning software solutions 
               that combine modern design with powerful functionality!
             </p>
           </motion.div>
@@ -132,7 +132,7 @@ export default function Contact() {
                   <p className="text-lg text-gray-600 leading-relaxed">
                     Founded by Karthick, Joy Fix creates beautiful web applications, mobile apps, and 
                     custom business solutions. Whether you need a modern website, mobile app, or 
-                    custom software platform, we're here to bring your vision to life with stunning design.
+                    custom software platform, we&apos;re here to bring your vision to life with stunning design.
                   </p>
                 </div>
 

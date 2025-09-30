@@ -11,11 +11,10 @@ import {
   Zap,
   Search,
   ArrowRight,
-  Bot,
+
   TrendingUp,
   Shield,
-  Clock,
-  Package
+
 } from 'lucide-react';
 
 export default function EcommercePage() {

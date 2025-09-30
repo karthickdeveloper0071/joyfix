@@ -13,7 +13,7 @@ import {
   CheckCircle
 } from 'lucide-react';
 import Logo from '../../components/ui/Logo';
-import LogoShowcase from '../../components/ui/LogoShowcase';
+
 
 export default function About() {
   const stats = [

@@ -9,7 +9,7 @@ import {
   Users, 
   Brain, 
   Zap,
-  BarChart3,
+
   ArrowRight,
   Bot,
   TrendingUp,

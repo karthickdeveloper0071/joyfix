@@ -120,8 +120,8 @@ export default function Careers() {
               Join Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Growing Team</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed">
-              Be part of Joy Fix's journey as we build innovative software solutions. 
-              We're looking for passionate developers to help us grow and make an impact in the tech industry.
+              Be part of Joy Fix&apos;s journey as we build innovative software solutions. 
+              We&apos;re looking for passionate developers to help us grow and make an impact in the tech industry.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">
@@ -317,8 +317,8 @@ export default function Careers() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Don't see a perfect match? We're always looking for talented individuals. 
-              Send us your resume and let's talk about opportunities.
+              Don&apos;t see a perfect match? We&apos;re always looking for talented individuals. 
+              Send us your resume and let&apos;s talk about opportunities.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
